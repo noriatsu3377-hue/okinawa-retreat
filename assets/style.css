@@ -240,3 +240,56 @@ h3{font-family:var(--min);font-weight:700}
 .vbtn{position:absolute;left:8px;bottom:8px;z-index:2;background:rgba(0,0,0,.5);color:#fff;border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:2px 10px;font-size:11px;cursor:pointer}
 
 .tier-member{margin:6px 0 0;font-size:13px;color:var(--forest)}.tier-member b{font-size:16px}
+
+/* ---- 2026-11-24 ストーリー構成 ---- */
+.pains{background:rgba(6,30,38,.55);border:1px solid rgba(255,255,255,.35);border-radius:8px;padding:14px 16px;margin:0 0 18px;max-width:560px}
+.pains-q{margin:0 0 6px;font-weight:700;color:#f3e3b8;font-size:15px}
+.pains ul{margin:0;padding:0;list-style:none}
+.pains li{position:relative;padding-left:22px;font-size:14px;line-height:1.7;margin:4px 0}
+.pains li::before{content:"";position:absolute;left:2px;top:7px;width:11px;height:6px;border-left:2px solid #f3e3b8;border-bottom:2px solid #f3e3b8;transform:rotate(-45deg)}
+.hero-lead strong{color:#fff;background:linear-gradient(transparent 62%,rgba(179,149,88,.55) 62%)}
+.seats{display:inline-block;margin:0 0 14px;padding:4px 14px;border-radius:999px;background:#fff;color:var(--sea-d);font-weight:700;font-size:14px}
+.seats b{font-size:20px;margin:0 2px}
+.final .seats{margin-top:6px}
+.problem{background:var(--kinari)}
+.prose p{margin:0 0 16px}
+.prose .em{font-family:var(--min);font-size:clamp(18px,4.6vw,24px);line-height:1.7;margin-top:28px}
+.prose strong,.gains h3{color:var(--sea-d)}
+.gain{background:#fff}
+.gains{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.gains li{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:8px;background:var(--sand)}
+.g-n{flex:none;width:40px;height:40px;border-radius:50%;background:var(--sea);color:#fff;display:grid;place-items:center;font-family:var(--min);font-weight:700;font-size:18px}
+.gains h3{margin:0 0 4px;font-size:19px}.gains p{margin:0;color:var(--mute);font-size:15px}
+@media(min-width:900px){.gains{grid-template-columns:1fr 1fr}.gains li:first-child{grid-column:1/-1;background:var(--sea-l)}}
+.change{background:var(--kinari)}
+.ba{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;font-size:15px}
+.ba th,.ba td{padding:14px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.ba thead th{background:var(--sea-d);color:#fff;font-weight:700}
+.ba tbody th{width:7.5em;font-weight:700;color:var(--mute)}
+.ba td:last-child{color:var(--sea-d);font-weight:700}
+@media(max-width:600px){.ba thead{display:none}.ba tr{display:block;border-bottom:1px solid var(--line);padding:10px 12px}.ba th,.ba td{display:block;border:0;padding:2px 0}.ba td:first-of-type::before{content:"これまで：";color:var(--mute);font-weight:400}.ba td:last-child::before{content:"これから：";font-weight:400}}
+.tiles{list-style:none;padding:0;margin:0 0 40px;display:grid;gap:16px;grid-template-columns:1fr 1fr}
+@media(min-width:900px){.tiles{grid-template-columns:repeat(3,1fr);gap:24px}}
+.tile .ph{aspect-ratio:4/3!important}
+.tile-txt h3{font-size:16px;margin:10px 0 2px;line-height:1.5}.tile-txt p{margin:0;font-size:13px;color:var(--mute);line-height:1.7}
+.cond-line{background:var(--forest-l);border-radius:8px;padding:24px}
+.cond-line h3{margin:0 0 12px;font-size:19px}
+.cond-line ol{list-style:none;margin:0 0 10px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.cond-line li{background:#fff;border-radius:999px;padding:4px 14px;font-size:14px;font-weight:700;color:var(--forest)}
+.cond-line li+li::before{content:"→ ";color:var(--gold)}
+.cond-line p{margin:0;color:var(--mute);font-size:15px}
+.days2{display:grid;gap:32px}
+@media(min-width:900px){.days2{grid-template-columns:repeat(3,1fr)}}
+.days2 .ph{aspect-ratio:4/3!important;margin-bottom:12px}
+.days2 p:last-child{margin:0;font-size:15px;color:var(--mute)}
+@media(min-width:900px){.steps{grid-template-columns:repeat(5,1fr)}}
+.final-lead{font-size:15px;margin:0 0 16px}
+.host-photo{width:200px;height:200px;border-radius:50%;object-fit:cover}
+.video-toggle{top:12px}
+
+.mid-cta{margin-top:40px;padding:28px 20px;border-radius:10px;background:var(--sea-d);color:#fff;text-align:center}
+.mid-cta p{margin:0 0 12px;font-family:var(--min);font-size:clamp(18px,4.8vw,24px)}
+.mid-cta .cta-row{margin:0 auto}
+.why-lead{font-family:var(--min);font-size:18px;margin:0 0 8px;color:var(--sea-d)}
+@media(min-width:768px){.video-toggle{top:60px}}
+@media(max-width:600px){.ba thead{display:block;position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}

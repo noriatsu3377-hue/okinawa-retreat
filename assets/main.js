@@ -100,7 +100,7 @@
   const dock = document.querySelector('[data-dock]');
   if (dock && 'IntersectionObserver' in window) {
     const vis = new Set();
-    const io = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? vis.add(e.target) : vis.delete(e.target)); dock.classList.toggle('is-on', vis.size === 0); });
+    const io = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? vis.add(e.target) : vis.delete(e.target)); const on = vis.size === 0; dock.classList.toggle('is-on', on); dock.inert = !on; });
     ['.hero', '.final', '.faq', '.site-foot'].forEach(s => { const t = document.querySelector(s); t && io.observe(t); });
   }
 })();
