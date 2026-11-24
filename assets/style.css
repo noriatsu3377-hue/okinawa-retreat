@@ -301,3 +301,46 @@ h3{font-family:var(--min);font-weight:700}
 .pains-box li{position:relative;padding:12px 0 12px 32px;border-bottom:1px dashed var(--line);font-weight:500}
 .pains-box li:last-child{border-bottom:0}
 .pains-box li::before{content:"";position:absolute;left:4px;top:20px;width:14px;height:8px;border-left:3px solid var(--sea);border-bottom:3px solid var(--sea);transform:rotate(-45deg)}
+
+/* ---- 2026-11-24 メリハリ調整：文字を小さく・縦を短く・パートごとに色分け ---- */
+body{font-size:15px;line-height:1.8}
+.sec{padding:56px 0}
+@media(min-width:768px){.sec{padding:80px 0}}
+h2{font-size:clamp(21px,5.4vw,32px);margin-bottom:16px}
+.hero-title{font-size:clamp(28px,7.4vw,54px)}
+.hero{min-height:88svh}
+.sec-lead{margin-bottom:28px;font-size:15px}
+.three{gap:28px}.three h3{font-size:19px}.three p{font-size:14px}
+.three li:nth-child(2){margin-top:0!important}
+.gains li{padding:16px}.gains h3{font-size:17px}.gains p{font-size:14px}
+.prose p{font-size:16px}
+.prose .em{font-size:clamp(17px,4.4vw,22px)}
+.days2 h3{font-size:19px}
+.tile-txt h3{font-size:15px}
+.pains-sec{padding:48px 0}
+/* tones */
+.tone-white{background:#fff;color:var(--ink)}
+.tone-sand{background:var(--kinari);color:var(--ink)}
+.tone-dark{background:#0f2229;color:#eef4f5}
+.tone-sea{background:var(--sea-d);color:#fff}
+.tone-dark .sec-lead,.tone-sea .sec-lead,.tone-dark .note,.tone-sea .note,.tone-dark .small,.tone-sea .small{color:#c9dbe0}
+.tone-dark .eyebrow,.tone-sea .eyebrow{color:#e5cf96}
+.tone-dark h2,.tone-sea h2,.tone-dark h3{color:#fff}
+.tone-dark .prose strong,.tone-sea strong{color:#f3e3b8}
+.tone-dark .prose .em{border-left:3px solid var(--gold);padding-left:14px}
+.tone-dark .host-role,.tone-dark .why-lead{color:#9fd3de}
+.tone-sea .gains li{background:#fff;border:0;color:var(--ink)}
+.tone-sea .gains li:first-child{background:#e9f6f8}
+.tone-sea .gains h3{color:var(--sea-d)}
+.tone-sea .mid-cta{background:#0a3a47;border:1px solid rgba(255,255,255,.25)}
+.tone-sea .steps li{background:rgba(255,255,255,.95);color:var(--ink)}
+.tone-sea .steps li:last-child{background:var(--gold);color:#fff}
+.tone-sea .sec-lead strong{color:#f3e3b8}
+.concept .sec-lead strong{color:var(--sea-d);font-size:1.15em}
+.tone-white .checks li{background:var(--sand)}
+.tone-sand .tier:not(.is-cur){background:#fff}
+.eyebrow,.num,.day-no,.step-n{color:#7a5e2a}
+.tone-dark .eyebrow,.tone-sea .eyebrow{color:#e5cf96}
+.tone-sea .steps li:last-child{background:#7a5e2a;color:#fff}
+.tone-sea .steps li:last-child .step-n{color:#fff}
+.site-foot .small{color:#b9c8cd}
