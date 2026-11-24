@@ -514,3 +514,8 @@ html:not(.js) .mark{background-size:100% 100%}
 .tone-black .all-in li{background:#fff}
 .hl-ink{color:var(--sea-d)}
 .tone-black .hl-ink{color:#f3e3b8}
+.ht-sub2{display:block;font-size:.5em;letter-spacing:.06em;margin-top:12px;color:#fff}
+.ht-main{font-size:1em;line-height:1.35}
+@media(max-width:767px){.hero-title{font-size:clamp(25px,7.6vw,68px)}}
+.ht-sub2{text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.hero-title .hl{text-shadow:0 2px 12px rgba(0,0,0,.75)}
