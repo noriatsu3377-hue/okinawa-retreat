@@ -2,7 +2,7 @@
   --sea:#0f6f86; --sea-d:#0a4f61; --sea-l:#d8eef2; --forest:#24493a; --forest-l:#e3ece6;
   --sand:#faf7f0; --kinari:#f2ebdd; --gold:#b39558; --ink:#1d2a2e; --mute:#56656a; --line:#d9d2c3;
   --night:#17262f;
-  --min:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --min:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
   --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
   --gut:16px;
 }
@@ -479,3 +479,22 @@ em,i,cite,address,dfn{font-style:normal}
 html:not(.js) .mark{background-size:100% 100%}
 @media(hover:hover){.js .tile.reveal.is-in:hover,.js .three li.reveal.is-in:hover,.js .gains li.reveal.is-in:hover,.js .diff-cards li.reveal.is-in:hover{transform:translateY(-4px)}}
 @media (prefers-reduced-motion:reduce){.gains li:hover,.diff-cards li:hover,.tier:hover,.tile:hover,.three li:hover,.js .reveal.is-in:hover{transform:none!important}}
+
+/* ---- 融合パートを先頭に / FV ---- */
+.ht-sub{font-size:.42em;letter-spacing:.08em}
+.ht-main{font-size:.78em}
+.hero-title .hl{color:#f3d993}
+.tone-white .diff-line{color:var(--ink)!important}
+.tone-white .diff-sub{color:#7a5e2a!important}
+.tone-white .diff h2 .hl{color:var(--sea-d)}
+.tone-black .pains-box{background:#fff;color:var(--ink);border:0}
+.tone-black .pains-box b{color:var(--sea-d)}
+.tone-black.pains-sec h2{color:#fff}
+.tone-white .prose p{color:var(--ink)}.tone-white .prose .em{color:var(--ink)}
+.tone-white .prose strong{color:var(--sea-d)}
+.tone-black .three h3{color:#9fd3de}.tone-black .three p{color:#d6d6d6}
+.tone-black .concept .sec-lead strong,.tone-black.concept .sec-lead strong{color:#f3e3b8}
+.tone-black .note{color:#c9c9c9}
+.ht-main{white-space:normal}
+@media(max-width:767px){.ht-main{font-size:1em}}
+.tone-white .marquee{color:#7a5e2a;border-color:var(--line)}
