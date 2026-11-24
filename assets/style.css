@@ -498,3 +498,6 @@ html:not(.js) .mark{background-size:100% 100%}
 .ht-main{white-space:normal}
 @media(max-width:767px){.ht-main{font-size:1em}}
 .tone-white .marquee{color:#7a5e2a;border-color:var(--line)}
+@media(min-width:768px){.diff-cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.diff-cards{grid-template-columns:repeat(4,1fr)}}
+.diff-cards li b{color:var(--sea-d)}
