@@ -344,3 +344,31 @@ h2{font-size:clamp(21px,5.4vw,32px);margin-bottom:16px}
 .tone-sea .steps li:last-child{background:#7a5e2a;color:#fff}
 .tone-sea .steps li:last-child .step-n{color:#fff}
 .site-foot .small{color:#b9c8cd}
+
+/* ---- 白・黒の交互 ---- */
+.tone-black{background:#111;color:#f2f2f2}
+.tone-black h2,.tone-black h3,.tone-black summary{color:#fff}
+.tone-black .eyebrow{color:#e5cf96}
+.tone-black .sec-lead,.tone-black .note,.tone-black .small,.tone-black p{color:#d6d6d6}
+.tone-black strong{color:#f3e3b8}
+.tone-black .prose .em{border-left:3px solid #e5cf96;padding-left:14px;color:#fff}
+.tone-black .host-role,.tone-black .why-lead{color:#9fd3de}
+.tone-black .gains li{background:#fff;border:0}.tone-black .gains li p{color:var(--mute)}.tone-black .gains h3{color:var(--sea-d)}
+.tone-black .gains li:first-child{background:#e9f6f8}
+.tone-black .mid-cta{background:#222;border:1px solid #444}
+.tone-black .mid-cta p{color:#fff}
+.tone-black .checks li{background:#fff;color:var(--ink)}
+.tone-black .day-no{color:#e5cf96}
+.tone-black .days2 p:last-child{color:#d6d6d6}
+.tone-black .qa{border-color:#333}.tone-black .qa p{color:#d6d6d6}.tone-black .qa summary::after{color:#9fd3de}
+.tone-black a{color:#9fd3de}
+.tone-black .ba td,.tone-black .ba th{color:var(--ink)}
+.tone-white .steps li{background:var(--sand)}
+.tone-white .steps li:last-child{background:var(--sea-d);color:#fff}
+.tone-white .steps li:last-child .step-n{color:#f3e3b8}
+.tone-white .tier:not(.is-cur){background:var(--sand)}
+.gains p{font-size:14px}
+.tone-black .btn-main{color:#fff}
+.tone-black .btn-sub{color:var(--sea-d)}
+.tone-black .mid-cta p.seats{color:var(--sea-d)}
+.tone-black h2 small{color:#d6d6d6}
