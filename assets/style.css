@@ -293,3 +293,11 @@ h3{font-family:var(--min);font-weight:700}
 .why-lead{font-family:var(--min);font-size:18px;margin:0 0 8px;color:var(--sea-d)}
 @media(min-width:768px){.video-toggle{top:60px}}
 @media(max-width:600px){.ba thead{display:block;position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
+
+.pains-sec{background:#fff;padding:64px 0}
+.pains-sec h2{text-align:center}
+.pains-box{background:var(--sand);border:1px solid var(--line);border-radius:10px;padding:20px 22px}
+.pains-box ul{list-style:none;margin:0;padding:0}
+.pains-box li{position:relative;padding:12px 0 12px 32px;border-bottom:1px dashed var(--line);font-weight:500}
+.pains-box li:last-child{border-bottom:0}
+.pains-box li::before{content:"";position:absolute;left:4px;top:20px;width:14px;height:8px;border-left:3px solid var(--sea);border-bottom:3px solid var(--sea);transform:rotate(-45deg)}
