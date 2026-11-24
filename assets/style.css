@@ -501,3 +501,16 @@ html:not(.js) .mark{background-size:100% 100%}
 @media(min-width:768px){.diff-cards{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1100px){.diff-cards{grid-template-columns:repeat(4,1fr)}}
 .diff-cards li b{color:var(--sea-d)}
+
+/* ---- 休息を届ける 構成 ---- */
+.hero-dates{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px}
+.hero-dates b{display:inline-block;background:rgba(255,255,255,.92);color:var(--sea-d);border-radius:4px;padding:0 6px;margin-right:6px;font-size:12px}
+.ht-sub{font-size:.42em}
+.all-in{list-style:none;padding:0;margin:0 0 8px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(min-width:768px){.all-in{grid-template-columns:repeat(3,1fr);gap:14px}}
+.all-in li{border:1px solid var(--line);border-radius:8px;padding:14px;background:var(--sand);display:flex;flex-direction:column;gap:2px}
+.all-in b{font-family:var(--min);font-size:18px;color:var(--sea-d)}
+.all-in span{font-size:13px;color:var(--mute);line-height:1.6}
+.tone-black .all-in li{background:#fff}
+.hl-ink{color:var(--sea-d)}
+.tone-black .hl-ink{color:#f3e3b8}
