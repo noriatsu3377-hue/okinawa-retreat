@@ -76,6 +76,22 @@
     lv.forEach(el => vo.observe(el));
   }
 
+  // 08 マーカー：画面に入ったら線を引く
+  const marks = $$('.mark');
+  if (reduce || !('IntersectionObserver' in window)) marks.forEach(m => m.classList.add('is-marked'));
+  else {
+    const mo = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-marked'); mo.unobserve(e.target); } }), { rootMargin: '0px 0px -15% 0px' });
+    marks.forEach(m => mo.observe(m));
+  }
+  // 07 プログレスバー
+  const bar = document.querySelector('[data-progress]');
+  if (bar && !reduce) {
+    let ticking = false;
+    const upd = () => { const h = document.documentElement.scrollHeight - innerHeight; bar.style.transform = `scaleX(${h > 0 ? Math.min(1, scrollY / h) : 0})`; ticking = false; };
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+    upd();
+  }
+
   // 開始前は申込ボタンを止める
   $$('[data-stage-cta][data-start]').forEach(a => { if (Date.now() < Date.parse(a.dataset.start)) { const s = document.createElement('span'); s.className = a.className.replace('btn-main', 'btn-off'); s.setAttribute('aria-disabled', 'true'); s.textContent = '受付開始前です'; a.replaceWith(s); } });
 

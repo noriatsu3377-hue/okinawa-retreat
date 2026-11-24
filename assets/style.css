@@ -458,3 +458,24 @@ em,i,cite,address,dfn{font-style:normal}
 .final-body{text-shadow:0 1px 8px rgba(0,0,0,.5)}
 .hero-lead{text-shadow:0 1px 8px rgba(0,0,0,.55)}
 .diff-cards small{font-size:12px;color:var(--mute)}
+
+/* ---- 演出（チートシート） ---- */
+/* 07 プログレスバー */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:50;pointer-events:none}
+.progress span{display:block;height:100%;background:linear-gradient(90deg,#f3d993,var(--sea));transform-origin:left;transform:scaleX(0)}
+/* 08 マーカー */
+.mark{background-image:linear-gradient(transparent 62%,rgba(243,217,147,.75) 62%);background-repeat:no-repeat;background-size:0% 100%;transition:background-size .9s ease .2s}
+.tone-black .mark{background-image:linear-gradient(transparent 62%,rgba(229,207,150,.35) 62%)}
+.mark.is-marked,.no-js .mark{background-size:100% 100%}
+/* 09 ホバーで浮き上がる */
+.gains li,.diff-cards li,.tier,.tile,.three li{transition:transform .3s ease,box-shadow .3s ease}
+@media(hover:hover){.gains li:hover,.diff-cards li:hover,.tier:hover,.tile:hover,.three li:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.14)}}
+/* 22 マーキー */
+.marquee{overflow:hidden;white-space:nowrap;margin:0 calc(var(--gut)*-1) 28px;padding:10px 0;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18);font-family:var(--min);font-size:15px;color:#e5cf96}
+.mq-track{display:inline-flex;animation:mq 40s linear infinite}
+.mq-track span{padding-right:0}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}.mark{background-size:100% 100%}.progress{display:none}}
+html:not(.js) .mark{background-size:100% 100%}
+@media(hover:hover){.js .tile.reveal.is-in:hover,.js .three li.reveal.is-in:hover,.js .gains li.reveal.is-in:hover,.js .diff-cards li.reveal.is-in:hover{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.gains li:hover,.diff-cards li:hover,.tier:hover,.tile:hover,.three li:hover,.js .reveal.is-in:hover{transform:none!important}}
